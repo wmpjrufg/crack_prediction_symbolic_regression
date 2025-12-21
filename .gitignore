@@ -1,5 +1,6 @@
 env/
 myenv/
+myenv-pysr/
 .ipynb_checkpoints
 .vscode/
 outputs/
