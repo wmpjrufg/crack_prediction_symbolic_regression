@@ -1,0 +1,637 @@
+Train RMSE: 0.0455747855923327
+Test RMSE: 0.05281300598954996
+Train R2: 0.6490122644584484
+Test R2: 0.21005970591446876
+Best Equation: (square((nbr_6118_wk1_fissuracao_estabilizada - sin(square(numero_de_barras_em_uma_camada))) - slip_de_biscaia_e_soares_2020) - (eurocode_2 - abs(caldas_1997 * cobrimento_mm))) * 0.023712408
+
+
+
+Train RMSE: 0.05168647974697121
+Test RMSE: 0.05638824165499644
+Train R2: 0.5485635920736363
+Test R2: 0.09948780718944839
+Best Equation: ((slip_de_biscaia_e_soares_2020 + 4.2655554) * 0.034858372) * abs(sin(largura_da_viga_b_mm / -0.1603979))
+
+
+
+Train RMSE: 0.046550582628032564
+Test RMSE: 0.05550254303851759
+Train R2: 0.6338214379372372
+Test R2: 0.12755459936161484
+Best Equation: square(area_de_aco_tracionada_as_mm2 + (beta_conforme_fields_e_bischoff_2004 - (((nbr_6118_wk1_fissuracao_estabilizada + (resistencia_a_tracao_do_concreto_mpa * largura_da_viga_b_mm)) + sin(diametro_da_armadura_mm)) * 0.7691828))) * 0.02509686
+
+
+
+Train RMSE: 0.04944822379457632
+Test RMSE: 0.055018203098306004
+Train R2: 0.5868154581688916
+Test R2: 0.14271485710796328
+Best Equation: (momento_fletor_ms_knm + (square(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada) + abs(sin(altura_da_viga_h_mm) - distancia_ao_centro_de_gravidade_da_armadura_mm))) * 0.036420833
+
+
+
+Train RMSE: 0.05168636038996423
+Test RMSE: 0.05636454848346223
+Train R2: 0.5485656770303423
+Test R2: 0.1002444013571776
+Best Equation: abs(((slip_de_biscaia_e_soares_2020 - -4.290165) * sin(largura_da_viga_b_mm * -6.2341123)) * -0.03465482)
+
+
+
+Train RMSE: 0.05186147756076245
+Test RMSE: 0.05351029423264272
+Train R2: 0.5455015099640852
+Test R2: 0.18906289757168981
+Best Equation: ((resistencia_a_tracao_do_concreto_mpa + (slip_de_yuan_et_al_2025 * largura_da_viga_b_mm)) + square(distancia_ao_centro_de_gravidade_da_armadura_mm - largura_da_viga_b_mm)) * 0.027267871
+
+
+
+Train RMSE: 0.048024955914468495
+Test RMSE: 0.0522836161536833
+Train R2: 0.6102585265828062
+Test R2: 0.22581682616972132
+Best Equation: (momento_fletor_ms_knm * 0.025974253) + abs((abs(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada) + sin(numero_de_barras_em_uma_camada)) * -0.07310034)
+
+
+
+Train RMSE: 0.04967510189401763
+Test RMSE: 0.049107474760391547
+Train R2: 0.5830152173976797
+Test R2: 0.3170204546085307
+Best Equation: abs((((abs(slip_de_biscaia_e_soares_2020 * resistencia_a_tracao_do_concreto_mpa) + momento_fletor_ms_knm) * 0.4281472) + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada)) * 0.07100401)
+
+
+
+Train RMSE: 0.05713630198514736
+Test RMSE: 0.05428868667841629
+Train R2: 0.4437907058528493
+Test R2: 0.2043504388127224
+Best Equation: 0.16410579 * square(sin(largura_da_viga_b_mm + abs(resistencia_a_tracao_do_concreto_mpa)))
+
+
+
+Train RMSE: 0.04644495124577621
+Test RMSE: 0.04729095593161411
+Train R2: 0.6324715121692528
+Test R2: 0.3962469437922491
+Best Equation: ((area_de_aco_tracionada_as_mm2 + (espacamento_entre_as_barras_mm + (largura_da_viga_b_mm * nbr_6118_wk1_fissuracao_estabilizada))) * 0.028608805) + square((sin(numero_de_barras_em_uma_camada) * 0.32605496) + 0.054510057)
+
+
+
+Train RMSE: 0.047563495955335565
+Test RMSE: 0.046539144452448354
+Train R2: 0.6145557943981514
+Test R2: 0.4152907735275385
+Best Equation: abs((((area_de_aco_tracionada_as_mm2 + equacao_15_do_artigo_de_belarbi_e_hsu_1994) + beta_conforme_fields_e_bischoff_2004) * 0.66171354) - ((nbr_6118_wk1_fissuracao_estabilizada + -0.4428601) - sin(numero_de_barras_em_uma_camada))) * 0.052652318
+
+
+
+Train RMSE: 0.04268367648695255
+Test RMSE: 0.0454686943416152
+Train R2: 0.6895886273742499
+Test R2: 0.4418793090545209
+Best Equation: (area_de_aco_tracionada_as_mm2 + (abs(abs(caldas_1997) - (resistencia_a_tracao_do_concreto_mpa * exp(resistencia_do_aco_fy_mpa))) + (sin(espacamento_entre_as_barras_mm / 0.0011697531) + (espacamento_entre_as_barras_mm + sin(numero_de_barras_em_uma_camada))))) * 0.035082098
+
+
+
+Train RMSE: 0.05432468593630354
+Test RMSE: 0.049971352425610384
+Train R2: 0.49718475866825207
+Test R2: 0.325867347674728
+Best Equation: 0.17410405 + (-0.16759558 * abs(sin(9.455876 * sin(largura_da_viga_b_mm))))
+
+
+
+Train RMSE: 0.05229867808127822
+Test RMSE: 0.05031803256047591
+Train R2: 0.533989815314891
+Test R2: 0.31648120651515244
+Best Equation: (diametro_da_armadura_mm + abs(square(exp(sin(numero_de_barras_em_uma_camada))) + espacamento_entre_as_barras_mm)) * 0.025525495
+
+
+
+Train RMSE: 0.04263616746755179
+Test RMSE: 0.041303616779112144
+Train R2: 0.6902792488896443
+Test R2: 0.5394473117049206
+Best Equation: abs((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (((momento_fletor_ms_knm + sin(((cos(resistencia_do_aco_fy_mpa) * resistencia_a_tracao_do_concreto_mpa) - cobrimento_mm) - diametro_da_armadura_mm)) * 0.70674187) - nbr_6118_wk1_fissuracao_estabilizada)) * 0.089397915) - ((oh_kang_1987 + 1.1854273) * 0.016027365)
+
+
+
+Train RMSE: 0.0476430968309139
+Test RMSE: 0.0496161119145176
+Train R2: 0.613264578534791
+Test R2: 0.33541794022166294
+Best Equation: (abs(abs((largura_da_viga_b_mm + 0.5707673) - resistencia_a_tracao_do_concreto_mpa) + resistencia_do_aco_fy_mpa) - cos(slip_de_biscaia_e_soares_2020 - nbr_6118_wk1_fissuracao_estabilizada)) * 0.05462784
+
+
+
+Train RMSE: 0.05451005120230284
+Test RMSE: 0.05128693495507759
+Train R2: 0.4819751359739599
+Test R2: 0.381445692519506
+Best Equation: abs(sin(numero_de_barras_em_uma_camada) + abs(nbr_6118_wk1_fissuracao_estabilizada - slip_de_biscaia_e_soares_2020)) * 0.059131917
+
+
+
+Train RMSE: 0.054510050950401026
+Test RMSE: 0.051288704895570775
+Train R2: 0.4819751407617523
+Test R2: 0.38140299848024806
+Best Equation: abs((abs(nbr_6118_wk1_fissuracao_estabilizada - slip_de_biscaia_e_soares_2020) + sin(numero_de_barras_em_uma_camada)) / 16.907284)
+
+
+
+Train RMSE: 0.04735850519278437
+Test RMSE: 0.0450569496878873
+Train R2: 0.6089850184570431
+Test R2: 0.5225939490466058
+Best Equation: ((abs(largura_da_viga_b_mm - distancia_ao_centro_de_gravidade_da_armadura_mm) + (((slip_de_biscaia_e_soares_2020 - -2.1588373) * sin(12.305763 / largura_da_viga_b_mm)) + diametro_da_armadura_mm)) * 0.029342933) + 0.026101977
+
+
+
+Train RMSE: 0.05111019384713823
+Test RMSE: 0.050076838475144325
+Train R2: 0.5445795986379128
+Test R2: 0.41029046463452845
+Best Equation: abs(abs(slip_de_biscaia_e_soares_2020 - nbr_6118_wk1_fissuracao_estabilizada) + sin(numero_de_barras_em_uma_camada - square(taxa_de_armadura_conforme_mc2020))) * 0.078819014
+
+
+
+Train RMSE: 0.05111019384542056
+Test RMSE: 0.05007677534114497
+Train R2: 0.5445795986685237
+Test R2: 0.4102919515773583
+Best Equation: abs(0.07881858 * (sin(numero_de_barras_em_uma_camada - square(taxa_de_armadura_conforme_mc2020)) + abs(slip_de_biscaia_e_soares_2020 - nbr_6118_wk1_fissuracao_estabilizada)))
+
+
+
+Train RMSE: 0.05190468310184939
+Test RMSE: 0.04098734145549088
+Train R2: 0.5303108659661631
+Test R2: 0.604939285689247
+Best Equation: (square(sin(numero_de_barras_em_uma_camada) + 0.2454969) * 0.10950547) + ((espacamento_entre_as_barras_mm + diametro_da_armadura_mm) * 0.03138802)
+
+
+
+Train RMSE: 0.04989827046670221
+Test RMSE: 0.04512895058946793
+Train R2: 0.5659213648328276
+Test R2: 0.5210669424096046
+Best Equation: (momento_fletor_ms_knm + abs((sin(numero_de_barras_em_uma_camada) + abs(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada)) * 2.9318883)) * 0.023545692
+
+
+
+Train RMSE: 0.05111019384726064
+Test RMSE: 0.050076840802727444
+Train R2: 0.5445795986357315
+Test R2: 0.410290409814854
+Best Equation: abs(abs(nbr_6118_wk1_fissuracao_estabilizada - slip_de_biscaia_e_soares_2020) + sin(numero_de_barras_em_uma_camada - square(taxa_de_armadura_conforme_mc2020))) * 0.07881903
+
+
+
+Train RMSE: 0.05206774231878201
+Test RMSE: 0.06619980652588751
+Train R2: 0.4836071764289326
+Test R2: 0.2907248626604665
+Best Equation: abs(sin(largura_da_viga_b_mm) + abs(area_de_aco_tracionada_as_mm2)) * 0.058220975
+
+
+
+Train RMSE: 0.05206774231878201
+Test RMSE: 0.06619980652588751
+Train R2: 0.4836071764289326
+Test R2: 0.2907248626604665
+Best Equation: abs(sin(largura_da_viga_b_mm) + abs(area_de_aco_tracionada_as_mm2)) * 0.058220975
+
+
+
+Train RMSE: 0.046497536275179614
+Test RMSE: 0.04924638179835638
+Train R2: 0.5881845952390357
+Test R2: 0.6074906995885405
+Best Equation: (abs(((beta_conforme_fields_e_bischoff_2004 * 1.4609178) - (nbr_6118_wk1_fissuracao_estabilizada - sin(numero_de_barras_em_uma_camada))) + area_de_aco_tracionada_as_mm2) + sin(numero_de_barras_em_uma_camada)) * 0.037791915
+
+
+
+Train RMSE: 0.04543337298387271
+Test RMSE: 0.0606479025325498
+Train R2: 0.6068188716675671
+Test R2: 0.4047041327905584
+Best Equation: abs(((sin(cube(resistencia_a_tracao_do_concreto_mpa) + largura_da_viga_b_mm) * (abs(caldas_1997) + 0.87182444)) + abs(area_de_aco_tracionada_as_mm2)) * 0.043879684)
+
+
+
+Train RMSE: 0.05206774231699657
+Test RMSE: 0.06619989347514815
+Train R2: 0.4836071764643476
+Test R2: 0.2907229994831395
+Best Equation: abs(sin(largura_da_viga_b_mm) + abs(area_de_aco_tracionada_as_mm2)) * 0.058220606
+
+
+
+Train RMSE: 0.05206774231699657
+Test RMSE: 0.06619989347514815
+Train R2: 0.4836071764643476
+Test R2: 0.2907229994831395
+Best Equation: abs(sin(largura_da_viga_b_mm) + abs(area_de_aco_tracionada_as_mm2)) * 0.058220606
+
+
+
+Train RMSE: 0.05206774231699657
+Test RMSE: 0.06619989347514815
+Train R2: 0.4836071764643476
+Test R2: 0.2907229994831395
+Best Equation: abs(abs(area_de_aco_tracionada_as_mm2) + sin(largura_da_viga_b_mm)) * 0.058220606
+
+
+
+Train RMSE: 0.04332836811640144
+Test RMSE: 0.06094197950528769
+Train R2: 0.6424083499280444
+Test R2: 0.3989170492422174
+Best Equation: abs(((fib_model_code_2010 * 0.1432566) + (sin((largura_da_viga_b_mm * cos(taxa_de_armadura_conforme_mc2020)) + cube(resistencia_a_tracao_do_concreto_mpa)) + abs(sin(square(area_de_aco_tracionada_as_mm2))))) * 0.13718928) - 0.04067355
+
+
+
+Train RMSE: 0.05579483877092127
+Test RMSE: 0.05112143939122017
+Train R2: 0.4615382139092097
+Test R2: 0.3569537930603822
+Best Equation: abs((((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) * 0.608841) + equacao_15_do_artigo_de_belarbi_e_hsu_1994) * 0.080620125)
+
+
+
+Train RMSE: 0.05698448479026946
+Test RMSE: 0.049566432292204504
+Train R2: 0.4383314772173863
+Test R2: 0.39547905239906234
+Best Equation: abs(sin(largura_da_viga_b_mm) + abs(area_de_aco_tracionada_as_mm2)) * 0.06018571
+
+
+
+Train RMSE: 0.051896328468954665
+Test RMSE: 0.04357290853644768
+Train R2: 0.5341564346701303
+Test R2: 0.5328362510481193
+Best Equation: abs(equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (((area_de_aco_tracionada_as_mm2 - sin(cobrimento_mm)) - nbr_6118_wk1_fissuracao_estabilizada) * 0.64657336)) * 0.07902908
+
+
+
+Train RMSE: 0.04511304059984232
+Test RMSE: 0.041920213332068516
+Train R2: 0.6479770060920871
+Test R2: 0.5676026714094538
+Best Equation: (abs(sin(largura_da_viga_b_mm) + abs(area_de_aco_tracionada_as_mm2)) - ((((resistencia_do_aco_fy_mpa + resistencia_a_tracao_do_concreto_mpa) * (beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada)) + (slip_de_biscaia_e_soares_2020 * -0.38137832)) * largura_da_viga_b_mm)) * 0.048048638
+
+
+
+Train RMSE: 0.05698448418302023
+Test RMSE: 0.04956669130917796
+Train R2: 0.4383314891881104
+Test R2: 0.39547273434920016
+Best Equation: abs((sin(largura_da_viga_b_mm) + abs(area_de_aco_tracionada_as_mm2)) * 0.06019304)
+
+
+
+Train RMSE: 0.05817660536085001
+Test RMSE: 0.042591942618003836
+Train R2: 0.4145853503959961
+Test R2: 0.5536341802304308
+Best Equation: abs(sin(largura_da_viga_b_mm / -0.00012225358)) * 0.1484866
+
+
+
+Train RMSE: 0.0551215473421453
+Test RMSE: 0.04638796820122987
+Train R2: 0.4744553320071939
+Test R2: 0.4705234437566186
+Best Equation: abs(largura_da_viga_b_mm - (resistencia_a_tracao_do_concreto_mpa - abs(slip_de_yuan_et_al_2025 + espacamento_entre_as_barras_mm))) * 0.037406635
+
+
+
+Train RMSE: 0.0473145096601965
+Test RMSE: 0.04667301007398771
+Train R2: 0.6127820147893133
+Test R2: 0.4639964633306827
+Best Equation: (abs((largura_da_viga_b_mm + slip_de_yuan_et_al_2025) - resistencia_a_tracao_do_concreto_mpa) + (sin(espacamento_entre_as_barras_mm / 3.411677e-5) - (espacamento_entre_as_barras_mm * distancia_ao_centro_de_gravidade_da_armadura_mm))) * 0.033769254
+
+
+
+Train RMSE: 0.05109957471306868
+Test RMSE: 0.06658037252903527
+Train R2: 0.481941511827216
+Test R2: 0.36823092535239843
+Best Equation: square(sin(largura_da_viga_b_mm / -0.05263608)) * 0.14583498
+
+
+
+Train RMSE: 0.04171421334473739
+Test RMSE: 0.05672042146054567
+Train R2: 0.6547669711380679
+Test R2: 0.5414942144882491
+Best Equation: ((((largura_da_viga_b_mm * fib_model_code_2010) + diametro_da_armadura_mm) + abs(espacamento_entre_as_barras_mm)) * 0.018947994) + ((sin(square(largura_da_viga_b_mm / 0.24381687)) * 0.08695907) - -0.049154278)
+
+
+
+Train RMSE: 0.04402546318419134
+Test RMSE: 0.06580794224615663
+Train R2: 0.6154506424406131
+Test R2: 0.3828047945494517
+Best Equation: (cos(slip_de_biscaia_e_soares_2020 - oh_kang_1987) * -0.09224553) - (sin(sqrt(abs(largura_da_viga_b_mm - (abs(area_de_aco_tracionada_as_mm2) * -0.7692981)))) * -0.18283103)
+
+
+
+Train RMSE: 0.04825125382263847
+Test RMSE: 0.08497884645627458
+Train R2: 0.5380856773084015
+Test R2: -0.029171105273628317
+Best Equation: (square(sin(largura_da_viga_b_mm) + 0.6051596) + abs(resistencia_a_tracao_do_concreto_mpa * caldas_1997)) * 0.038315766
+
+
+
+Train RMSE: 0.04395649742801374
+Test RMSE: 0.06252254573820715
+Train R2: 0.6166544896230092
+Test R2: 0.4428922147717864
+Best Equation: (sin(largura_da_viga_b_mm / 9.258877e-5) + sqrt(abs((square(caldas_1997) - espacamento_entre_as_barras_mm) + diametro_da_armadura_mm))) * 0.052405007
+
+
+
+Train RMSE: 0.05231775738847803
+Test RMSE: 0.06723514069054501
+Train R2: 0.4569466942592295
+Test R2: 0.35574387280988096
+Best Equation: exp(sin(largura_da_viga_b_mm / -0.0009103544)) * 0.053746022
+
+
+
+Train RMSE: 0.03965013070883029
+Test RMSE: 0.05507074046033627
+Train R2: 0.6880870047228655
+Test R2: 0.5677771194268064
+Best Equation: ((abs(distancia_ao_centro_de_gravidade_da_armadura_mm - espacamento_entre_as_barras_mm) + abs(square(0.60809344 - (nbr_6118_wk1_fissuracao_estabilizada - caldas_1997)) / ((((numero_de_barras_em_uma_camada * largura_da_viga_b_mm) / -0.59413195) + 1.9438858) / resistencia_a_tracao_do_concreto_mpa))) * 0.02853065) - (-0.0017065664 / (espacamento_entre_as_barras_mm + 0.2557962))
+
+
+
+Train RMSE: 0.046285023576282724
+Test RMSE: 0.05841248518287301
+Train R2: 0.5749645037057877
+Test R2: 0.5137302100622693
+Best Equation: (abs(abs(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada) + sin(numero_de_barras_em_uma_camada)) + (momento_fletor_ms_knm * 0.36283392)) * 0.06746879
+
+
+
+Train RMSE: 0.04891548922701918
+Test RMSE: 0.059764298380889785
+Train R2: 0.5592466445455277
+Test R2: 0.344555229351016
+Best Equation: (abs(sin(1.9059685 / resistencia_do_aco_fy_mpa) + (resistencia_a_tracao_do_concreto_mpa - largura_da_viga_b_mm)) + sin(largura_da_viga_b_mm)) * 0.03774074
+
+
+
+Train RMSE: 0.05146811671011134
+Test RMSE: 0.0629322370350686
+Train R2: 0.5120454426527614
+Test R2: 0.27322698822325564
+Best Equation: abs(sin((largura_da_viga_b_mm + 0.5208294) * resistencia_a_tracao_do_concreto_mpa) * 0.15021713)
+
+
+
+Train RMSE: 0.044454095028873784
+Test RMSE: 0.04991259449380662
+Train R2: 0.6359790561110541
+Test R2: 0.5428352431260599
+Best Equation: ((cos(nbr_6118_wk1_fissuracao_estabilizada) + fib_model_code_2010) * -0.047836006) + abs(-0.018686974 - (sin(numero_de_barras_em_uma_camada) * (((cos(nbr_6118_wk2_fissuracao_nao_estabilizada) + (slip_de_biscaia_e_soares_2020 + espacamento_entre_as_barras_mm)) * 0.08692945) - -0.07874464)))
+
+
+
+Train RMSE: 0.048740517889780094
+Test RMSE: 0.06268014615619089
+Train R2: 0.5623941659960215
+Test R2: 0.27903787000225755
+Best Equation: square(sin((largura_da_viga_b_mm / 1.9657414) + sqrt(abs(resistencia_a_tracao_do_concreto_mpa * numero_de_barras_em_uma_camada)))) * 0.15566869
+
+
+
+Train RMSE: 0.053644028304806
+Test RMSE: 0.06354028300777015
+Train R2: 0.4699149080981162
+Test R2: 0.25911510283118977
+Best Equation: exp(sin(largura_da_viga_b_mm / -3.87028e-6)) * 0.054571
+
+
+
+Train RMSE: 0.05419485965308759
+Test RMSE: 0.06403501955894692
+Train R2: 0.45897290399171886
+Test R2: 0.2475328495882636
+Best Equation: exp(sin(largura_da_viga_b_mm / 0.0036731982)) * 0.054871455
+
+
+
+Train RMSE: 0.04695195897712336
+Test RMSE: 0.056030036154557795
+Train R2: 0.5939212547919321
+Test R2: 0.42390479886319155
+Best Equation: ((sin(square(numero_de_barras_em_uma_camada)) + sin(largura_da_viga_b_mm)) * 0.05599747) + ((abs(largura_da_viga_b_mm + nbr_6118_wk1_fissuracao_estabilizada) + area_de_aco_tracionada_as_mm2) * 0.020973321)
+
+
+
+Train RMSE: 0.04611905431566109
+Test RMSE: 0.06132887512985733
+Train R2: 0.6082007402742253
+Test R2: 0.3097880878547996
+Best Equation: square(sin(((sin(abs(diametro_da_armadura_mm / resistencia_a_tracao_do_concreto_mpa)) + largura_da_viga_b_mm) * resistencia_a_tracao_do_concreto_mpa) + 0.1798124)) * 0.16201702
+
+
+
+Train RMSE: 0.049700942700975574
+Test RMSE: 0.053761887760450607
+Train R2: 0.5417546176825785
+Test R2: 0.48613254686058693
+Best Equation: (abs((beta_conforme_fields_e_bischoff_2004 + sin(numero_de_barras_em_uma_camada)) - nbr_6118_wk1_fissuracao_estabilizada) + (area_de_aco_tracionada_as_mm2 * 0.41477996)) * 0.06197002
+
+
+
+Train RMSE: 0.0548956117431469
+Test RMSE: 0.060364763491066925
+Train R2: 0.4409584299602478
+Test R2: 0.3521580021506978
+Best Equation: square(sin(abs(resistencia_a_tracao_do_concreto_mpa) + largura_da_viga_b_mm) * 0.39696842)
+
+
+
+Train RMSE: 0.045749666317337546
+Test RMSE: 0.05200156036799973
+Train R2: 0.6117202812231876
+Test R2: 0.5192327866795784
+Best Equation: (abs(beta_conforme_fields_e_bischoff_2004 - (nbr_6118_wk1_fissuracao_estabilizada - sin(numero_de_barras_em_uma_camada))) + ((area_de_aco_tracionada_as_mm2 - cos(square(largura_da_viga_b_mm))) * 0.37028447)) * 0.07147039
+
+
+
+Train RMSE: 0.04806485990187775
+Test RMSE: 0.050167862070718244
+Train R2: 0.5714275928706186
+Test R2: 0.5525409673700681
+Best Equation: (abs(sin(numero_de_barras_em_uma_camada) + abs(nbr_6118_wk1_fissuracao_estabilizada - beta_conforme_fields_e_bischoff_2004)) + (area_de_aco_tracionada_as_mm2 * 0.33855686)) * 0.07096205
+
+
+
+Train RMSE: 0.05709334630507246
+Test RMSE: 0.056499123305360596
+Train R2: 0.39530017733014455
+Test R2: 0.43247433036149985
+Best Equation: abs(cos(4.159816 / largura_da_viga_b_mm) * 0.1255938)
+
+
+
+Train RMSE: 0.04205383136861898
+Test RMSE: 0.048474047196412434
+Train R2: 0.6719198290595424
+Test R2: 0.5822459637581959
+Best Equation: (sin(largura_da_viga_b_mm / -0.10914159) + (area_de_aco_tracionada_as_mm2 + abs((beta_conforme_fields_e_bischoff_2004 + ((sin(numero_de_barras_em_uma_camada) - nbr_6118_wk1_fissuracao_estabilizada) / 0.65788054)) + equacao_15_do_artigo_de_belarbi_e_hsu_1994))) * 0.035280447
+
+
+
+Train RMSE: 0.04716653011251468
+Test RMSE: 0.0445102209436115
+Train R2: 0.5872978794692566
+Test R2: 0.6477738529912169
+Best Equation: (diametro_da_armadura_mm * 0.014517867) + sqrt(abs(((slip_de_biscaia_e_soares_2020 + cube(cos(desayiganesan_1985))) * (largura_da_viga_b_mm - -0.5294852)) / sin(cobrimento_mm)) * 0.0053265886)
+
+
+
+Train RMSE: 0.04646143974790629
+Test RMSE: 0.052117623272018
+Train R2: 0.5995445837550641
+Test R2: 0.5170843315934802
+Best Equation: abs((nbr_6118_wk1_fissuracao_estabilizada - caldas_1997) * (((resistencia_a_tracao_do_concreto_mpa - ((0.17949696 / largura_da_viga_b_mm) - (distancia_ao_centro_de_gravidade_da_armadura_mm / 0.5299691))) - numero_de_barras_em_uma_camada) * -0.0406462))
+
+
+
+Train RMSE: 0.047785467615387656
+Test RMSE: 0.05287051802787467
+Train R2: 0.571245705964774
+Test R2: 0.5172813462435646
+Best Equation: (abs((abs(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada) + sin(numero_de_barras_em_uma_camada)) / 0.36963558) + area_de_aco_tracionada_as_mm2) * 0.025573913
+
+
+
+Train RMSE: 0.05330140744121537
+Test RMSE: 0.06452649304716297
+Train R2: 0.466549464013264
+Test R2: 0.2809765164284588
+Best Equation: (largura_da_viga_b_mm + abs(abs(caldas_1997) - resistencia_a_tracao_do_concreto_mpa)) * 0.03677605
+
+
+
+Train RMSE: 0.047464193914946
+Test RMSE: 0.05490080783244509
+Train R2: 0.5769915709747129
+Test R2: 0.4794955820594886
+Best Equation: ((0.08925849 - (fib_model_code_2010 * -0.043909777)) * sin(square(largura_da_viga_b_mm * -4.0717797))) - -0.068801224
+
+
+
+Train RMSE: 0.0428441874229453
+Test RMSE: 0.05225219629155245
+Train R2: 0.6553322706673552
+Test R2: 0.5285061312163466
+Best Equation: (((((slip_de_biscaia_e_soares_2020 - -2.0355854) - sin(distancia_ao_centro_de_gravidade_da_armadura_mm)) * largura_da_viga_b_mm) + abs(espacamento_entre_as_barras_mm)) + abs(exp(oh_kang_1987 - nbr_6118_wk1_fissuracao_estabilizada) * resistencia_a_tracao_do_concreto_mpa)) * 0.023938293
+
+
+
+Train RMSE: 0.049437134349498243
+Test RMSE: 0.06085306297946176
+Train R2: 0.5410943766700398
+Test R2: 0.36051282934313633
+Best Equation: (largura_da_viga_b_mm + abs(nbr_6118_wk1_fissuracao_estabilizada + (largura_da_viga_b_mm - (cobrimento_mm + resistencia_a_tracao_do_concreto_mpa)))) * 0.029813059
+
+
+
+Train RMSE: 0.04943713442522905
+Test RMSE: 0.06085268451500584
+Train R2: 0.5410943752640807
+Test R2: 0.3605207836645674
+Best Equation: (abs(((nbr_6118_wk1_fissuracao_estabilizada - cobrimento_mm) + largura_da_viga_b_mm) - resistencia_a_tracao_do_concreto_mpa) + largura_da_viga_b_mm) * 0.029820114
+
+
+
+Train RMSE: 0.04702724480280614
+Test RMSE: 0.05185651358591184
+Train R2: 0.5847440415203624
+Test R2: 0.535619921922235
+Best Equation: (((espacamento_entre_as_barras_mm + ((beta_conforme_fields_e_bischoff_2004 * sin(altura_da_viga_h_mm)) + area_de_aco_tracionada_as_mm2)) * 0.42244712) + sin(square(numero_de_barras_em_uma_camada))) * 0.08144403
+
+
+
+Train RMSE: 0.04943713443166034
+Test RMSE: 0.06085268366193326
+Train R2: 0.5410943751446824
+Test R2: 0.3605208015938398
+Best Equation: (abs(cobrimento_mm + ((resistencia_a_tracao_do_concreto_mpa - largura_da_viga_b_mm) - nbr_6118_wk1_fissuracao_estabilizada)) + largura_da_viga_b_mm) * 0.02982013
+
+
+
+Train RMSE: 0.05336779735913322
+Test RMSE: 0.059475730066191425
+Train R2: 0.4881531029859142
+Test R2: 0.27694975059382587
+Best Equation: abs((beta_conforme_fields_e_bischoff_2004 + ((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) / 1.4971898)) * 0.07555769)
+
+
+
+Train RMSE: 0.04811508603584154
+Test RMSE: 0.05143561034569997
+Train R2: 0.5839514133718671
+Test R2: 0.45922486789434847
+Best Equation: abs((area_de_aco_tracionada_as_mm2 + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 - sin(cobrimento_mm)))) - (nbr_6118_wk1_fissuracao_estabilizada * 1.4820352)) * 0.043813605
+
+
+
+Train RMSE: 0.05036445546152217
+Test RMSE: 0.04616968985782164
+Train R2: 0.5441417666804089
+Test R2: 0.5642846789974343
+Best Equation: ((resistencia_a_tracao_do_concreto_mpa + (square(largura_da_viga_b_mm - distancia_ao_centro_de_gravidade_da_armadura_mm) * (slip_de_yuan_et_al_2025 - -1.9894537))) - eurocode_2) * 0.016294925
+
+
+
+Train RMSE: 0.04825272007828047
+Test RMSE: 0.04983257172823262
+Train R2: 0.5815677805585532
+Test R2: 0.492407124331841
+Best Equation: 0.07155135 * (abs(sin(numero_de_barras_em_uma_camada) + abs(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada)) + (area_de_aco_tracionada_as_mm2 * 0.34532213))
+
+
+
+Train RMSE: 0.05033745752013069
+Test RMSE: 0.052581162811120456
+Train R2: 0.5446303626593673
+Test R2: 0.4348687942819035
+Best Equation: ((-0.072657175 + (slip_de_biscaia_e_soares_2020 * -0.027784957)) * sin(largura_da_viga_b_mm * -38.289623)) - -0.08174271
+
+
+
+Train RMSE: 0.055069234508706245
+Test RMSE: 0.05347826753477805
+Train R2: 0.4549961166561134
+Test R2: 0.4154205074784951
+Best Equation: abs(largura_da_viga_b_mm - (resistencia_a_tracao_do_concreto_mpa - abs(slip_de_biscaia_e_soares_2020))) * 0.03862616
+
+
+
+Train RMSE: 0.043203251312982555
+Test RMSE: 0.04694336182721148
+Train R2: 0.6645603622511691
+Test R2: 0.5495596438649059
+Best Equation: ((abs(sin((square(resistencia_a_tracao_do_concreto_mpa * 0.41583553) * distancia_ao_centro_de_gravidade_da_armadura_mm) + ((abs(area_de_aco_tracionada_as_mm2) + largura_da_viga_b_mm) / -1.6926184))) - 0.40283826) * ((slip_de_biscaia_e_soares_2020 * 0.066654995) + 0.18016805)) - -0.056021508
+
+
+
+Train RMSE: 0.047359153868838204
+Test RMSE: 0.04771448907300802
+Train R2: 0.5969217292586131
+Test R2: 0.5346395482958937
+Best Equation: abs(((cube(sin(numero_de_barras_em_uma_camada)) - nbr_6118_wk1_fissuracao_estabilizada) * 1.4181184) + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + beta_conforme_fields_e_bischoff_2004) + area_de_aco_tracionada_as_mm2)) * 0.037577864
