@@ -1,0 +1,663 @@
+
+diametro_da_armadura_mm	resistencia_do_aco_fy_mpa	resistencia_a_tracao_do_concreto_mpa	cobrimento_mm	distancia_ao_centro_de_gravidade_da_armadura_mm	area_de_aco_tracionada_as_mm2	taxa_de_armadura_conforme_mc2020	tensao_na_armadura_menos_tension_stiffening_variavel_mpa	fib_model_code_2010	eurocode_2	nbr_6118_wk1_fissuracao_estabilizada	nbr_6118_wk2_fissuracao_nao_estabilizada	clark_1956	desayiganesan_1985	oh_kang_1987	caldas_1997	gergely_e_lutz_1968	equacao_15_do_artigo_de_belarbi_e_hsu_1994	beta_conforme_fields_e_bischoff_2004	slip_de_yuan_et_al_2025	slip_de_biscaia_e_soares_2020
+0	20.0	500	4.120341	25.0	39.0	628.0	0.0213	120.527746	0.125734	0.125292	0.262468	0.157380	0.181006	0.312684	0.185969	0.129998	0.241528	0.149956	0.116566	0.109686	0.082007
+1	20.0	500	4.120341	25.0	39.0	628.0	0.0213	223.847983	0.176982	0.176359	0.344489	0.271111	0.244363	0.410398	0.256204	0.174746	0.317005	0.204348	0.197288	0.193326	0.156266
+2	20.0	500	4.120341	25.0	39.0	628.0	0.0213	242.052198	0.184078	0.183430	0.355846	0.289281	0.253135	0.423928	0.265928	0.180941	0.327456	0.212052	0.208041	0.205301	0.167096
+3	20.0	500	4.120341	25.0	39.0	628.0	0.0213	325.147190	0.218769	0.217999	0.411368	0.386596	0.296022	0.490072	0.313472	0.211232	0.378549	0.250139	0.259368	0.265222	0.221958
+4	20.0	500	4.120341	25.0	39.0	628.0	0.0213	447.784457	0.286574	0.285566	0.519888	0.617471	0.379848	0.619355	0.406398	0.270437	0.478411	0.311870	0.354810	0.388948	0.338382
+wexp_menos_wfib2020
+0	0.073841
+1	0.082873
+2	0.084432
+3	0.073162
+4	0.072498
+
+
+parsimony	max_size	pop_size	ncycles_per_iteration	niterations	weight_optimize
+0	0.001	20	250	1000	500	0.001
+1	0.001	20	500	1000	500	0.001
+2	0.001	30	250	1000	500	0.001
+3	0.001	30	500	1000	500	0.001
+4	0.010	20	250	1000	500	0.001
+5	0.010	20	500	1000	500	0.001
+6	0.010	30	250	1000	500	0.001
+7	0.010	30	500	1000	500	0.001
+Train RMSE: 0.055242896761081406
+Test RMSE: 0.05104158595988126
+Train R2: 0.45160849032815964
+Test R2: 0.40070407640107397
+Best Equation: abs(((area_de_aco_tracionada_as_mm2 + (beta_conforme_fields_e_bischoff_2004 / 0.67941004)) - nbr_6118_wk1_fissuracao_estabilizada) * -0.049447287)
+
+
+
+Train RMSE: 0.05524289684144882
+Test RMSE: 0.05104243517524192
+Train R2: 0.45160848873255877
+Test R2: 0.40068413440561834
+Best Equation: abs(beta_conforme_fields_e_bischoff_2004 + ((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) * 0.67935795)) * 0.072777994
+
+
+
+Train RMSE: 0.05144986393281343
+Test RMSE: 0.04113117672369149
+Train R2: 0.5243294145033994
+Test R2: 0.610833658228531
+Best Equation: abs(equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) - sin(cobrimento_mm)) * 0.673718)) * 0.07361812
+
+
+
+Train RMSE: 0.04887878592312918
+Test RMSE: 0.04677666619417672
+Train R2: 0.570682436895748
+Test R2: 0.49667148481213463
+Best Equation: (abs((caldas_1997 * cobrimento_mm) + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) / -0.50421804)) + area_de_aco_tracionada_as_mm2) * 0.033898324
+
+
+
+Train RMSE: 0.05674387598624153
+Test RMSE: 0.05476169559525292
+Train R2: 0.4214034621084042
+Test R2: 0.3101625357700004
+Best Equation: abs((beta_conforme_fields_e_bischoff_2004 * cos(area_de_aco_tracionada_as_mm2)) - nbr_6118_wk1_fissuracao_estabilizada) * 0.07117981
+
+
+
+Train RMSE: 0.056743875986242906
+Test RMSE: 0.05476169626542825
+Train R2: 0.4214034621083762
+Test R2: 0.31016251888549595
+Best Equation: abs(((cos(area_de_aco_tracionada_as_mm2) * beta_conforme_fields_e_bischoff_2004) - nbr_6118_wk1_fissuracao_estabilizada) * 0.071179815)
+
+
+
+Train RMSE: 0.04887878592159629
+Test RMSE: 0.04677667112625508
+Train R2: 0.5706824369226757
+Test R2: 0.49667137867135924
+Best Equation: (area_de_aco_tracionada_as_mm2 + abs((cobrimento_mm * caldas_1997) - ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) / 0.5042179))) * 0.033898316
+
+
+
+Train RMSE: 0.05144986398147043
+Test RMSE: 0.04113276175068321
+Train R2: 0.5243294136037001
+Test R2: 0.6108036638986654
+Best Equation: abs((sin(cobrimento_mm) - (area_de_aco_tracionada_as_mm2 + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 / 0.6737034) - nbr_6118_wk1_fissuracao_estabilizada))) * 0.04959185)
+
+
+
+Train RMSE: 0.05072961111176486
+Test RMSE: 0.04791567191338292
+Train R2: 0.5286861673172336
+Test R2: 0.560581038408404
+Best Equation: abs((((equacao_15_do_artigo_de_belarbi_e_hsu_1994 / 0.65235615) + (area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada)) - sin(cobrimento_mm)) * 0.050062064)
+
+
+
+Train RMSE: 0.050462525420421935
+Test RMSE: 0.0438227562785923
+Train R2: 0.5336359314872079
+Test R2: 0.6324444310144404
+Best Equation: (area_de_aco_tracionada_as_mm2 + abs(abs(caldas_1997) + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) / resistencia_do_aco_fy_mpa))) * 0.029504212
+
+
+
+Train RMSE: 0.05072961131867697
+Test RMSE: 0.0479157297985084
+Train R2: 0.5286861634725151
+Test R2: 0.5605799767166411
+Best Equation: abs((((equacao_15_do_artigo_de_belarbi_e_hsu_1994 / 0.65232384) + (area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada)) - sin(cobrimento_mm)) * 0.050059117)
+
+
+
+Train RMSE: 0.05072961131295007
+Test RMSE: 0.0479154123200691
+Train R2: 0.528686163578929
+Test R2: 0.5605857996863258
+Best Equation: abs(((area_de_aco_tracionada_as_mm2 - (sin(cobrimento_mm) + nbr_6118_wk1_fissuracao_estabilizada)) + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 * 1.5330228)) * 0.050062615)
+
+
+
+Train RMSE: 0.05132672066313742
+Test RMSE: 0.046412221534043584
+Train R2: 0.5175257330838265
+Test R2: 0.5877237269398716
+Best Equation: abs(equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (((area_de_aco_tracionada_as_mm2 + abs(caldas_1997)) * 0.4478134) - nbr_6118_wk1_fissuracao_estabilizada)) * 0.06763764
+
+
+
+Train RMSE: 0.05517152512227145
+Test RMSE: 0.05181234222167565
+Train R2: 0.44253565058497657
+Test R2: 0.48620475689812237
+Best Equation: abs((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) + (beta_conforme_fields_e_bischoff_2004 * 1.4783137)) * 0.04992688
+
+
+
+Train RMSE: 0.05072961180063584
+Test RMSE: 0.04791568914434864
+Train R2: 0.5286861545170398
+Test R2: 0.560580722369241
+Best Equation: abs(((((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) - sin(cobrimento_mm)) * 0.65228623) + equacao_15_do_artigo_de_belarbi_e_hsu_1994) * 0.07674127)
+
+
+
+Train RMSE: 0.05058778696346602
+Test RMSE: 0.04643446458907934
+Train R2: 0.5313177761314457
+Test R2: 0.5873284654782354
+Best Equation: (area_de_aco_tracionada_as_mm2 + abs(abs(caldas_1997) + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) * 2.7905598))) * 0.028199699
+
+
+
+Train RMSE: 0.05530485165962434
+Test RMSE: 0.049537908567555106
+Train R2: 0.4640058973292196
+Test R2: 0.20612570061496005
+Best Equation: abs(((area_de_aco_tracionada_as_mm2 + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 / 0.59131676)) - nbr_6118_wk1_fissuracao_estabilizada) * 0.047245983)
+
+
+
+Train RMSE: 0.05649488545358492
+Test RMSE: 0.05396123671976202
+Train R2: 0.4406909937053437
+Test R2: 0.05802322065811372
+Best Equation: abs((nbr_6118_wk1_fissuracao_estabilizada - (beta_conforme_fields_e_bischoff_2004 * cos(area_de_aco_tracionada_as_mm2))) * -0.072420165)
+
+
+
+Train RMSE: 0.05073809190297509
+Test RMSE: 0.05038943338325401
+Train R2: 0.548869895275329
+Test R2: 0.17859875325266705
+Best Equation: abs((area_de_aco_tracionada_as_mm2 + (((equacao_15_do_artigo_de_belarbi_e_hsu_1994 / 0.62656635) - sin(cobrimento_mm)) - nbr_6118_wk1_fissuracao_estabilizada)) * -0.04874104)
+
+
+
+Train RMSE: 0.04653256821520661
+Test RMSE: 0.04664635815099949
+Train R2: 0.6205560845294338
+Test R2: 0.29609849631247487
+Best Equation: (((abs(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada) + equacao_15_do_artigo_de_belarbi_e_hsu_1994) + ((abs(caldas_1997) + area_de_aco_tracionada_as_mm2) / 1.9329244)) - eurocode_2) * 0.05669018
+
+
+
+Train RMSE: 0.055304852711966244
+Test RMSE: 0.04954033454250547
+Train R2: 0.4640058769314048
+Test R2: 0.20604794334268584
+Best Equation: abs((area_de_aco_tracionada_as_mm2 + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 / 0.5912889) - nbr_6118_wk1_fissuracao_estabilizada)) * 0.0472527)
+
+
+
+Train RMSE: 0.046532567533297105
+Test RMSE: 0.046644014394003785
+Train R2: 0.6205560956505226
+Test R2: 0.29616922992136996
+Best Equation: ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (((abs(caldas_1997) + area_de_aco_tracionada_as_mm2) * 0.51715565) + abs(nbr_6118_wk1_fissuracao_estabilizada - beta_conforme_fields_e_bischoff_2004))) - eurocode_2) * 0.056697447
+
+
+
+Train RMSE: 0.047456465935597006
+Test RMSE: 0.05106896248499499
+Train R2: 0.605338888683137
+Test R2: 0.15629528202604615
+Best Equation: ((area_de_aco_tracionada_as_mm2 + (((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - eurocode_2) / 0.42127287) + square(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada))) + abs(caldas_1997)) * 0.030341709
+
+
+
+Train RMSE: 0.05017798518845743
+Test RMSE: 0.04598428644590462
+Train R2: 0.558775128064445
+Test R2: 0.3159382429674338
+Best Equation: (abs(((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) / resistencia_do_aco_fy_mpa) + abs(caldas_1997)) + area_de_aco_tracionada_as_mm2) * 0.030453047
+
+
+
+Train RMSE: 0.0544702560308984
+Test RMSE: 0.05603609971868604
+Train R2: 0.4411134371011539
+Test R2: 0.489602865928382
+Best Equation: abs(((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) * 0.68288565) + beta_conforme_fields_e_bischoff_2004) * 0.07008413
+
+
+
+Train RMSE: 0.05447025465586063
+Test RMSE: 0.05603726101950073
+Train R2: 0.44111346531802575
+Test R2: 0.4895817106105619
+Best Equation: abs((beta_conforme_fields_e_bischoff_2004 + ((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) * 0.6828179)) * 0.07007321)
+
+
+
+Train RMSE: 0.05090053823471622
+Test RMSE: 0.061039781394377456
+Train R2: 0.511966556104549
+Test R2: 0.39438256797166027
+Best Equation: abs(((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) - (sin(diametro_da_armadura_mm * cobrimento_mm) * area_de_aco_tracionada_as_mm2)) * -0.06968582)
+
+
+
+Train RMSE: 0.04829341844870559
+Test RMSE: 0.053007147283393834
+Train R2: 0.5606802468151768
+Test R2: 0.5432891885363886
+Best Equation: abs((nbr_6118_wk1_fissuracao_estabilizada * -0.8061748) + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 + ((area_de_aco_tracionada_as_mm2 - sin(cobrimento_mm)) * 0.5075321))) * 0.083230555
+
+
+
+Train RMSE: 0.05447025461909957
+Test RMSE: 0.05603829638109527
+Train R2: 0.4411134660723921
+Test R2: 0.4895628491470845
+Best Equation: abs(((area_de_aco_tracionada_as_mm2 + (beta_conforme_fields_e_bischoff_2004 / 0.6828704)) - nbr_6118_wk1_fissuracao_estabilizada) * 0.047850613)
+
+
+
+Train RMSE: 0.05447025462201445
+Test RMSE: 0.056038346326516796
+Train R2: 0.4411134660125766
+Test R2: 0.4895619392689593
+Best Equation: abs((beta_conforme_fields_e_bischoff_2004 / 0.6828712) + (area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada)) * 0.047850557
+
+
+
+Train RMSE: 0.04829314595261529
+Test RMSE: 0.053070425098384194
+Train R2: 0.5606852045332775
+Test R2: 0.5421981314489939
+Best Equation: abs((((area_de_aco_tracionada_as_mm2 - sin(cobrimento_mm)) * -0.042176243) + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 * -0.08322811)) + (nbr_6118_wk1_fissuracao_estabilizada * 0.06720422))
+
+
+
+Train RMSE: 0.049641569018998265
+Test RMSE: 0.05097097069153828
+Train R2: 0.5358099420768991
+Test R2: 0.5777027659147069
+Best Equation: (abs(((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) / resistencia_do_aco_fy_mpa) + abs(caldas_1997)) + area_de_aco_tracionada_as_mm2) * 0.02891634
+
+
+
+Train RMSE: 0.05258514648355006
+Test RMSE: 0.06438439904441115
+Train R2: 0.47041126144590584
+Test R2: 0.436220781402776
+Best Equation: 0.07622537 * abs(nbr_6118_wk1_fissuracao_estabilizada - (equacao_15_do_artigo_de_belarbi_e_hsu_1994 * cos(cube(area_de_aco_tracionada_as_mm2))))
+
+
+
+Train RMSE: 0.049631302545365984
+Test RMSE: 0.057904377937160016
+Train R2: 0.5282369617824187
+Test R2: 0.5439939850102711
+Best Equation: abs((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) - sin(cobrimento_mm)) * 0.6633893)) * 0.074695244)
+
+
+
+Train RMSE: 0.049446309718669645
+Test RMSE: 0.056075247800697364
+Train R2: 0.5317472516909327
+Test R2: 0.5723483289004405
+Best Equation: (area_de_aco_tracionada_as_mm2 + abs(((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) / resistencia_do_aco_fy_mpa) + abs(caldas_1997))) * 0.02765175
+
+
+
+Train RMSE: 0.04963130226289819
+Test RMSE: 0.057904489919592725
+Train R2: 0.5282369671523308
+Test R2: 0.5439922212502899
+Best Equation: abs((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - (((nbr_6118_wk1_fissuracao_estabilizada + sin(cobrimento_mm)) - area_de_aco_tracionada_as_mm2) * 0.6633136)) * 0.074707925)
+
+
+
+Train RMSE: 0.04589692465387193
+Test RMSE: 0.054526928852940075
+Train R2: 0.5965592726128593
+Test R2: 0.5956384567775683
+Best Equation: (((1.9507091 * (abs(nbr_6118_wk1_fissuracao_estabilizada - equacao_15_do_artigo_de_belarbi_e_hsu_1994) + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 - eurocode_2))) + abs(caldas_1997)) + area_de_aco_tracionada_as_mm2) * 0.02831063
+
+
+
+Train RMSE: 0.05353168157339617
+Test RMSE: 0.06393235651214375
+Train R2: 0.45117442980572
+Test R2: 0.4441095722106717
+Best Equation: abs((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + ((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) * 0.6157672)) * 0.077514246)
+
+
+
+Train RMSE: 0.044527694592940814
+Test RMSE: 0.05184935082877843
+Train R2: 0.6202716817347693
+Test R2: 0.6343762345218418
+Best Equation: ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + abs(area_de_aco_tracionada_as_mm2 / -2.0523853)) + ((abs(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada) + sin(cube(cube(area_de_aco_tracionada_as_mm2 / 0.4793493)))) - eurocode_2)) * 0.06504136
+
+
+
+Train RMSE: 0.049631302427666425
+Test RMSE: 0.05790425527576345
+Train R2: 0.5282369640199704
+Test R2: 0.5439959169635149
+Best Equation: abs(((area_de_aco_tracionada_as_mm2 + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 / 0.6633815) - nbr_6118_wk1_fissuracao_estabilizada)) - sin(cobrimento_mm)) * -0.049553975)
+
+
+
+Train RMSE: 0.048680439820675714
+Test RMSE: 0.048669027201597624
+Train R2: 0.5700668379683486
+Test R2: 0.4722435002924271
+Best Equation: (area_de_aco_tracionada_as_mm2 + abs((cobrimento_mm * caldas_1997) + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) * -1.9545357))) * 0.035184238
+
+
+
+Train RMSE: 0.05444071839326212
+Test RMSE: 0.05842141793241827
+Train R2: 0.46230047471929214
+Test R2: 0.23954687968444655
+Best Equation: abs((beta_conforme_fields_e_bischoff_2004 + ((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) * 0.68505925)) * 0.07455114)
+
+
+
+Train RMSE: 0.05098714202045374
+Test RMSE: 0.04633939102262212
+Train R2: 0.5283571050100733
+Test R2: 0.5215584335052543
+Best Equation: 0.077885285 * abs(equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (((area_de_aco_tracionada_as_mm2 - sin(cobrimento_mm)) - nbr_6118_wk1_fissuracao_estabilizada) / 1.570327))
+
+
+
+Train RMSE: 0.05091938457562903
+Test RMSE: 0.050795797311264206
+Train R2: 0.5296098162596613
+Test R2: 0.4251112334178426
+Best Equation: abs((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (((area_de_aco_tracionada_as_mm2 + abs(caldas_1997)) * 0.46618345) - nbr_6118_wk1_fissuracao_estabilizada)) * -0.06746778)
+
+
+
+Train RMSE: 0.05444071883260621
+Test RMSE: 0.058423677632280846
+Train R2: 0.4623004660406739
+Test R2: 0.23948805094986725
+Best Equation: abs(((area_de_aco_tracionada_as_mm2 + (beta_conforme_fields_e_bischoff_2004 * 1.4596748)) - nbr_6118_wk1_fissuracao_estabilizada) * -0.051079616)
+
+
+
+Train RMSE: 0.0544407184685042
+Test RMSE: 0.0584225192455686
+Train R2: 0.46230047323299195
+Test R2: 0.2395182085242743
+Best Equation: abs((area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada) + (beta_conforme_fields_e_bischoff_2004 * 1.4596362)) * 0.05107562
+
+
+
+Train RMSE: 0.05091938456479361
+Test RMSE: 0.05079561675978308
+Train R2: 0.5296098164598552
+Test R2: 0.4251153202454667
+Best Equation: abs((((abs(caldas_1997) + area_de_aco_tracionada_as_mm2) * 0.46617377) + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada)) * 0.06746666)
+
+
+
+Train RMSE: 0.0457375168392383
+Test RMSE: 0.037773125808427746
+Train R2: 0.6204778541477733
+Test R2: 0.6820973781853579
+Best Equation: ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (((area_de_aco_tracionada_as_mm2 + square(caldas_1997)) - clark_1956) * 0.22869755)) + (abs(equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) - eurocode_2)) * 0.06567285
+
+
+
+Train RMSE: 0.05504842932113632
+Test RMSE: 0.048562789363457266
+Train R2: 0.4599357358504911
+Test R2: 0.4031024029264585
+Best Equation: abs(beta_conforme_fields_e_bischoff_2004 + (area_de_aco_tracionada_as_mm2 - (nbr_6118_wk1_fissuracao_estabilizada - equacao_15_do_artigo_de_belarbi_e_hsu_1994))) * 0.043263864
+
+
+
+Train RMSE: 0.05504842932113633
+Test RMSE: 0.048562789363457266
+Train R2: 0.4599357358504911
+Test R2: 0.4031024029264585
+Best Equation: abs((beta_conforme_fields_e_bischoff_2004 + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada))) * 0.043263864)
+
+
+
+Train RMSE: 0.0491270384236467
+Test RMSE: 0.04672571516973457
+Train R2: 0.5698729602758679
+Test R2: 0.44740812208866043
+Best Equation: abs((((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - (nbr_6118_wk1_fissuracao_estabilizada * 0.7716922)) * 2.0666306) - (sin(cobrimento_mm) - area_de_aco_tracionada_as_mm2)) * 0.043221023)
+
+
+
+Train RMSE: 0.045838309878734565
+Test RMSE: 0.048662665487338885
+Train R2: 0.6255336739628911
+Test R2: 0.4006446725020303
+Best Equation: (area_de_aco_tracionada_as_mm2 * 0.026493846) + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (abs((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + (square(caldas_1997) * 0.16730094)) - nbr_6118_wk1_fissuracao_estabilizada) - eurocode_2)) * 0.06880113)
+
+
+
+Train RMSE: 0.055048429228318166
+Test RMSE: 0.04856323848952501
+Train R2: 0.45993573767171536
+Test R2: 0.40309136222991726
+Best Equation: abs(beta_conforme_fields_e_bischoff_2004 + (area_de_aco_tracionada_as_mm2 - (nbr_6118_wk1_fissuracao_estabilizada - equacao_15_do_artigo_de_belarbi_e_hsu_1994))) * 0.043265875
+
+
+
+Train RMSE: 0.05141412904817
+Test RMSE: 0.05272790898754874
+Train R2: 0.5288919297818049
+Test R2: 0.29632247406724355
+Best Equation: (area_de_aco_tracionada_as_mm2 + abs(caldas_1997 + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) / 0.37941876))) * 0.028743288
+
+
+
+Train RMSE: 0.049814841972972056
+Test RMSE: 0.053297959625068454
+Train R2: 0.5577446541624251
+Test R2: 0.28102506580199993
+Best Equation: 0.02826681 * (area_de_aco_tracionada_as_mm2 + abs(((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) / -0.3485106) - abs(caldas_1997)))
+
+
+
+Train RMSE: 0.05133570267195627
+Test RMSE: 0.04689996930932874
+Train R2: 0.5303280766151957
+Test R2: 0.4432788766994745
+Best Equation: (eurocode_2 - abs(abs((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + caldas_1997) - nbr_6118_wk1_fissuracao_estabilizada) + equacao_15_do_artigo_de_belarbi_e_hsu_1994)) * -0.044924453
+
+
+
+Train RMSE: 0.05246502457377965
+Test RMSE: 0.06237773690941096
+Train R2: 0.4974928602652168
+Test R2: 0.17986585948988
+Best Equation: abs((((caldas_1997 + equacao_15_do_artigo_de_belarbi_e_hsu_1994) * cos(area_de_aco_tracionada_as_mm2)) - nbr_6118_wk1_fissuracao_estabilizada) / 20.143505)
+
+
+
+Train RMSE: 0.05246502456051344
+Test RMSE: 0.062377774440328375
+Train R2: 0.4974928605193428
+Test R2: 0.17986487258661998
+Best Equation: abs((nbr_6118_wk1_fissuracao_estabilizada - ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + caldas_1997) * cos(area_de_aco_tracionada_as_mm2))) * 0.049643006)
+
+
+
+Train RMSE: 0.04832002702467917
+Test RMSE: 0.05104625202683238
+Train R2: 0.5737574390640918
+Test R2: 0.4507710978155255
+Best Equation: (area_de_aco_tracionada_as_mm2 + (abs(square(caldas_1997) + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) / 0.24108382)) - eurocode_2)) * 0.01711283
+
+
+
+Train RMSE: 0.045141165922073685
+Test RMSE: 0.04125976915988613
+Train R2: 0.6279956490048535
+Test R2: 0.6411778450055176
+Best Equation: ((eurocode_2 - area_de_aco_tracionada_as_mm2) * -0.020083858) + (abs((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + ((caldas_1997 + 0.46966007) / (-1.9391447 / cobrimento_mm))) - nbr_6118_wk1_fissuracao_estabilizada) * 0.069572695)
+
+
+
+Train RMSE: 0.05246502459404732
+Test RMSE: 0.06237771300883887
+Train R2: 0.49749285987697156
+Test R2: 0.1798664879728089
+Best Equation: abs(nbr_6118_wk1_fissuracao_estabilizada - (cos(area_de_aco_tracionada_as_mm2) * (equacao_15_do_artigo_de_belarbi_e_hsu_1994 + caldas_1997))) * 0.049644295
+
+
+
+Train RMSE: 0.05504659591884882
+Test RMSE: 0.053658446787239446
+Train R2: 0.44682389736155004
+Test R2: 0.3931213531255948
+Best Equation: abs((((area_de_aco_tracionada_as_mm2 + beta_conforme_fields_e_bischoff_2004) - nbr_6118_wk1_fissuracao_estabilizada) + equacao_15_do_artigo_de_belarbi_e_hsu_1994) * 0.041870885)
+
+
+
+Train RMSE: 0.048320028142726276
+Test RMSE: 0.05104082546937601
+Train R2: 0.5737574193389676
+Test R2: 0.45088786500828426
+Best Equation: ((area_de_aco_tracionada_as_mm2 + abs(square(caldas_1997) + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) / 0.24099362))) - eurocode_2) * 0.017110415
+
+
+
+Train RMSE: 0.05044134635802628
+Test RMSE: 0.054971061396853
+Train R2: 0.5355105913915728
+Test R2: 0.36306676993085285
+Best Equation: (eurocode_2 - abs(equacao_15_do_artigo_de_belarbi_e_hsu_1994 + abs((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + caldas_1997) - nbr_6118_wk1_fissuracao_estabilizada))) * -0.04377633
+
+
+
+Train RMSE: 0.04594336703721223
+Test RMSE: 0.0504405125503782
+Train R2: 0.6152978630354624
+Test R2: 0.47551502008785396
+Best Equation: (((((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + abs(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada)) - eurocode_2) * 1.8658946) + area_de_aco_tracionada_as_mm2) + abs(caldas_1997)) * 0.029871192
+
+
+
+Train RMSE: 0.04594336688262223
+Test RMSE: 0.05044216498053865
+Train R2: 0.61529786562435
+Test R2: 0.4754806552905191
+Best Equation: ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + ((area_de_aco_tracionada_as_mm2 + abs(caldas_1997)) / 1.8655965)) + (abs(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada) - eurocode_2)) * 0.05573501
+
+
+
+Train RMSE: 0.050216845701660136
+Test RMSE: 0.051046378430305565
+Train R2: 0.5404023303089607
+Test R2: 0.46283965383457437
+Best Equation: abs(0.08011007 * (equacao_15_do_artigo_de_belarbi_e_hsu_1994 - ((nbr_6118_wk1_fissuracao_estabilizada + (sin(cobrimento_mm) - area_de_aco_tracionada_as_mm2)) * 0.60547394)))
+
+
+
+Train RMSE: 0.04634814692736339
+Test RMSE: 0.05385278833307538
+Train R2: 0.6084892342404136
+Test R2: 0.4021524376574893
+Best Equation: (area_de_aco_tracionada_as_mm2 + abs(caldas_1997 + ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada) / sin(resistencia_do_aco_fy_mpa / 0.013129282)))) * 0.033557452
+
+
+
+Train RMSE: 0.05391941458297766
+Test RMSE: 0.06139091907973006
+Train R2: 0.47013004412352566
+Test R2: 0.22306919046724882
+Best Equation: abs((beta_conforme_fields_e_bischoff_2004 + equacao_15_do_artigo_de_belarbi_e_hsu_1994) + (area_de_aco_tracionada_as_mm2 - nbr_6118_wk1_fissuracao_estabilizada)) * 0.042950165
+
+
+
+Train RMSE: 0.04434171185319248
+Test RMSE: 0.05693145455001815
+Train R2: 0.6416529203063766
+Test R2: 0.33184283014863536
+Best Equation: ((((abs(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada) - (eurocode_2 - equacao_15_do_artigo_de_belarbi_e_hsu_1994)) * exp(resistencia_do_aco_fy_mpa)) + abs(caldas_1997)) + area_de_aco_tracionada_as_mm2) * 0.033699635
+
+
+
+Train RMSE: 0.04594336703079468
+Test RMSE: 0.05044094761723534
+Train R2: 0.615297863142936
+Test R2: 0.4755059723203203
+Best Equation: (abs(caldas_1997) + ((((abs(beta_conforme_fields_e_bischoff_2004 - nbr_6118_wk1_fissuracao_estabilizada) + equacao_15_do_artigo_de_belarbi_e_hsu_1994) - eurocode_2) * 1.8657933) + area_de_aco_tracionada_as_mm2)) * 0.029871566
+
+
+
+Train RMSE: 0.042166372452791874
+Test RMSE: 0.046921026908126294
+Train R2: 0.6759504372639007
+Test R2: 0.5461533956729061
+Best Equation: ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 + abs((area_de_aco_tracionada_as_mm2 + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 - (sin(slip_de_yuan_et_al_2025) + sin(cobrimento_mm)))) - (exp(resistencia_do_aco_fy_mpa) * (nbr_6118_wk1_fissuracao_estabilizada - beta_conforme_fields_e_bischoff_2004)))) * 0.04065831) - (eurocode_2 * 0.054107986)
+
+
+
+Train RMSE: 0.0531285807086386
+Test RMSE: 0.06574900668447846
+Train R2: 0.47151424225991967
+Test R2: 0.2912278410385697
+Best Equation: abs(((beta_conforme_fields_e_bischoff_2004 * 1.4815327) + area_de_aco_tracionada_as_mm2) - nbr_6118_wk1_fissuracao_estabilizada) * 0.04914861
+
+
+
+Train RMSE: 0.0531285806632105
+Test RMSE: 0.06574936359375308
+Train R2: 0.47151424316369317
+Test R2: 0.29122014607688185
+Best Equation: abs((nbr_6118_wk1_fissuracao_estabilizada - area_de_aco_tracionada_as_mm2) - (beta_conforme_fields_e_bischoff_2004 * 1.4814842)) * 0.04914838
+
+
+
+Train RMSE: 0.04936132690469757
+Test RMSE: 0.060366744564117496
+Train R2: 0.54380501069651
+Test R2: 0.402519453159801
+Best Equation: abs((sin(cobrimento_mm) - ((area_de_aco_tracionada_as_mm2 + (equacao_15_do_artigo_de_belarbi_e_hsu_1994 * 1.5262213)) - nbr_6118_wk1_fissuracao_estabilizada)) * -0.048972744)
+
+
+
+Train RMSE: 0.04717903967577471
+Test RMSE: 0.058211020162148595
+Train R2: 0.5832505332920819
+Test R2: 0.44443013775400375
+Best Equation: (area_de_aco_tracionada_as_mm2 + abs((2.042298 * (equacao_15_do_artigo_de_belarbi_e_hsu_1994 - nbr_6118_wk1_fissuracao_estabilizada)) - (caldas_1997 * cobrimento_mm))) * 0.03289945
+
+
+
+Train RMSE: 0.053128580703304375
+Test RMSE: 0.06574901070498428
+Train R2: 0.4715142423660419
+Test R2: 0.2912277543567223
+Best Equation: abs((((beta_conforme_fields_e_bischoff_2004 * 1.4815302) + area_de_aco_tracionada_as_mm2) - nbr_6118_wk1_fissuracao_estabilizada) * 0.049148664)
+
+
+
+Train RMSE: 0.05312858099307125
+Test RMSE: 0.06574872613625986
+Train R2: 0.4715142366012477
+Test R2: 0.2912338896270543
+Best Equation: abs(area_de_aco_tracionada_as_mm2 + ((beta_conforme_fields_e_bischoff_2004 / 0.67504025) - nbr_6118_wk1_fissuracao_estabilizada)) * 0.04915394
+
+
+
+Train RMSE: 0.04444513395696081
+Test RMSE: 0.05616784017224327
+Train R2: 0.6301502763790046
+Test R2: 0.4827461805238298
+Best Equation: abs((0.6354224 - (cos(resistencia_a_tracao_do_concreto_mpa * (cobrimento_mm + -1.645485)) - equacao_15_do_artigo_de_belarbi_e_hsu_1994)) - (nbr_6118_wk1_fissuracao_estabilizada - ((area_de_aco_tracionada_as_mm2 + caldas_1997) * 0.3853305))) * 0.05528115
+
+
+
+Train RMSE: 0.04936132850521875
+Test RMSE: 0.06036654157964673
+Train R2: 0.5438049811126313
+Test R2: 0.40252347123530163
+Best Equation: abs(nbr_6118_wk1_fissuracao_estabilizada + (sin(cobrimento_mm) - ((equacao_15_do_artigo_de_belarbi_e_hsu_1994 / 0.65526754) + area_de_aco_tracionada_as_mm2))) * 0.048975877
+
+
