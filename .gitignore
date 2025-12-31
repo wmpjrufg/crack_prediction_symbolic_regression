@@ -1,5 +1,8 @@
 env/
 myenv/
+myenv_tsne/
+myenv_stats/
+myenv_pysr/
 .ipynb_checkpoints
 .vscode/
 outputs/
