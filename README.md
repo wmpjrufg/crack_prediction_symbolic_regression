@@ -16,6 +16,16 @@ myenv\Scripts\activate    # On Windows
 ```
 
 #### 1.3 Install required packages
+##### 1.3.1 Dataset
+```bash
+pip install -r requirements_dataset_stats.txt
+```
+
+##### 1.3.2 TSNE model
+```bash
+pip install -r requirements_tsne.txt
+```
+
 ```bash
 pip install -r requirements.txt
 ```
