@@ -1,0 +1,21 @@
+[project]
+name = "rimes-research"
+version = "1"
+description = "Improving numerical models for crack prediction with symbolic regression"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+                    "ipykernel==7.1.0",
+                    "jupyter==1.1.1",
+                    "matplotlib==3.10.8",
+                    "numpy",
+                    "openpyxl==3.1.5",
+                    "pandas==2.3.3",
+                    "pysr==1.5.9",
+                    "scikit-learn==1.8.0",
+                    "scipy",
+                    "seaborn==0.13.2",
+                ]
+
+[tool.uv]
+package = false
