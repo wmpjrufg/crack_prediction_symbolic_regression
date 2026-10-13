@@ -1,0 +1,89 @@
+{
+    "index": 79,
+    "equation": "cos(sin(cobrimento_mm)) * ((-0.103875965 * ((cos(resistencia_a_tracao_do_concreto_mpa) * (tensao_na_armadura_menos_tension_stiffening_variavel_mpa - caldas_1997)) + eurocode_2)) - (-0.075556934 * slip_de_yuan_et_al_2025))",
+    "latex": "\\left(- 0.103875965 w_{ec} + 0.075556934 w_{yuan} - 0.103875965 \\left(\\sigma_{sts} - w_{caldas}\\right) \\cos{\\left(f_{t} \\right)}\\right) \\cos{\\left(\\sin{\\left(cob \\right)} \\right)}",
+    "complexity": 18,
+    "score": 0.0771519678338295,
+    "train_r2": 0.687002921957844,
+    "test_r2": 0.7713727175996875,
+    "train_rmse": 0.050305962005113655,
+    "test_rmse": 0.04204367315633261,
+    "scaler": {
+        "diametro_da_armadura_mm": {
+            "avg": 17.839044117647056,
+            "std_dev": 6.185251002881118
+        },
+        "resistencia_do_aco_fy_mpa": {
+            "avg": 470.0367647058824,
+            "std_dev": 102.39714409564671
+        },
+        "resistencia_a_tracao_do_concreto_mpa": {
+            "avg": 3.060493822477859,
+            "std_dev": 0.45002252021138955
+        },
+        "cobrimento_mm": {
+            "avg": 32.897095588235295,
+            "std_dev": 10.976564273741067
+        },
+        "taxa_de_armadura_conforme_mc2020": {
+            "avg": 0.025735880011369512,
+            "std_dev": 0.01470775786178174
+        },
+        "tensao_na_armadura_menos_tension_stiffening_variavel_mpa": {
+            "avg": 249.45724138027285,
+            "std_dev": 119.63856601870587
+        },
+        "fib_model_code_2010": {
+            "avg": 0.21772889648942595,
+            "std_dev": 0.08414675062854389
+        },
+        "eurocode_2": {
+            "avg": 0.22438213652791628,
+            "std_dev": 0.07228894373367005
+        },
+        "nbr_6118_wk1_fissuracao_estabilizada": {
+            "avg": 0.26987937763267045,
+            "std_dev": 0.07972948434059193
+        },
+        "nbr_6118_wk2_fissuracao_nao_estabilizada": {
+            "avg": 0.3286011690836331,
+            "std_dev": 0.19989260215609284
+        },
+        "clark_1956": {
+            "avg": 0.22918063636431063,
+            "std_dev": 0.10446102554913944
+        },
+        "desayiganesan_1985": {
+            "avg": 0.28041157696967833,
+            "std_dev": 0.10238691556689043
+        },
+        "oh_kang_1987": {
+            "avg": 0.2798876404605114,
+            "std_dev": 0.08374369658905914
+        },
+        "caldas_1997": {
+            "avg": 0.206253634967849,
+            "std_dev": 0.07957441282257334
+        },
+        "gergely_e_lutz_1968": {
+            "avg": 0.28194219659423103,
+            "std_dev": 0.0752013244725778
+        },
+        "equacao_15_do_artigo_de_belarbi_e_hsu_1994": {
+            "avg": 0.27599592786199706,
+            "std_dev": 0.08938235554714084
+        },
+        "beta_conforme_fields_e_bischoff_2004": {
+            "avg": 0.27492776709444444,
+            "std_dev": 0.10965415258151257
+        },
+        "slip_de_yuan_et_al_2025": {
+            "avg": 0.28172110117634164,
+            "std_dev": 0.1291372093760241
+        },
+        "slip_de_biscaia_e_soares_2020": {
+            "avg": 0.2455316843337171,
+            "std_dev": 0.10802306690861374
+        }
+    }
+}

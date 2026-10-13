@@ -1,0 +1,13 @@
+TOP 3 EQUATIONS - OVERLEAF READY
+================================================================================
+
+Rank 1: R2=0.630358
+\begin{equation}
+w = 0.048484124 \left|{\left(w_{caldas} - w_{nbr1}\right) \left(- f_{t} + \sin{\left(1752.71320003365 f_{y} \right)} + \left|{d_{p}}\right|\right)}\right|
+\end{equation}
+
+Rank 2: R2=0.615311
+\begin{equation}
+w = 0.0202881196524303 b_{w} \left(- \phi_{l} + w_{bs} + \frac{\sin{\left(A_{s} \right)}}{cob}\right) + 0.05595479 \left|{\sin{\left(b_{w} \right)} + \left|{A_{s}}\right|}\right|
+\end{equation}
+

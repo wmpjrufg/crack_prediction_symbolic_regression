@@ -1,0 +1,13 @@
+TOP 3 EQUATIONS - OVERLEAF READY
+================================================================================
+
+Rank 1: R2=0.778566
+\begin{equation}
+w = 0.038229395 A_{s} \left(- s_{b} + w_{clark}\right) + 0.038229395 A_{s} - 0.038229395 w_{ec} + 0.038229395 \left(w_{bs} + 2.3217003\right) \left(\sin{\left(\operatorname{square}{\left(n_{b} \right)} \right)} - 0.38980067\right)
+\end{equation}
+
+Rank 2: R2=0.770996
+\begin{equation}
+w = - 0.051693182 w_{\beta} + 0.051693182 \left(M_{s} + b_{w} e^{\sin{\left(w_{ec} \right)}}\right) \cos{\left(e^{d_{p}} \right)}
+\end{equation}
+
